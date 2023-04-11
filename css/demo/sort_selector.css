@@ -1,0 +1,17 @@
+.selectors{
+    top : 0 ;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-style: italic;
+    margin-left: 2.5vw;
+}
+.year_selector:hover{
+    color: blue;
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+
+.key_selector{
+    text-align: left;
+}

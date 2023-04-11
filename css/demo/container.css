@@ -1,0 +1,45 @@
+.container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: auto;
+}
+.card{
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin-left : 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 20px;
+    width: 20vw;
+    height: 35vh;
+    display: block;
+}
+.card:hover{
+    border-color: blue;
+}
+.card_title {
+    font-size: 150%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.card_content{
+    width: 20vw;
+    height: 26vh;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+.card_tag{
+    width: 19.8vw;
+    vertical-align :middle;
+    border-top: solid 2px black;
+    
+}
+.tag{
+    color: blue;
+}
+.tag:hover{
+    cursor: pointer;
+}
+
+

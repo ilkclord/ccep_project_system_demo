@@ -1,0 +1,43 @@
+.Modal {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(236, 228, 228, 0.497);
+    display: none;
+    
+}
+.modal_card{
+    background-color: white;
+    border: 3px solid black;
+    top : 0 ;
+    width: 50vw;
+    height: 100vh;
+    margin-left: 25%;
+    position: fixed;
+}
+
+.modal_title {
+    font-size: 150%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.project {
+    width: 50vw;
+    height: 100vh;
+    margin-left: 25%;
+    background-color: white;
+    border: 3px solid black;
+}
+.enbede::-webkit-scrollbar {
+    display: none;
+}
+.project {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
