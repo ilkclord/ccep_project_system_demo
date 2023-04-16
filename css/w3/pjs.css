@@ -1,9 +1,27 @@
+.logo{
+    height: 30%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+div[class^="pj_unit"] {
+    padding-left: 36px;
+    padding-right: 36px;
+}
 div[class^="pj_card"]{
-    height: 200px;
+    height: 260px;
+}
+div[class^="pj-title"]{
+    font-size: 150%;
+    text-align: center;
 }
 div[class^="abstract"] {
-    height: 150px;
+    font-size: 120%;
+    text-indent: 24px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
     overflow: hidden;
     -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
 }
@@ -13,31 +31,40 @@ div[class^="abstract"] {
 span[class*="tag"]:hover{
     cursor: pointer;
 }
-.modal{
-    height: 95%;
+div[class^="tags"] {
+    overflow-x: scroll;
+    font-size: 120%;
+}
+div[class^="tags"]::-webkit-scrollbar {
+    display: none;
+}
+div[class^="modal"]{
+    height: 95vh;
     width: 800px;
 }
-div[class^="pj_unit"] {
-    padding-left: 24px;
-    padding-right: 24px;
+#mdc{
+    height: 95vh;
+    width: 800px;
 }
-[class*="yslt"]:hover{
+div[class*="year-sort"] {
+    padding-left: 60px;
+}
+span[class*="yslt"]:hover{
     cursor: pointer;
 }
-.search-bar{
-    background-color: aqua;
-    margin-right: 12px;
+span[class*="yslt"]{
+    font-size: 120%;
 }
 input {
     border-color: black;
-    height: 24px;
+    height: 36px;
     background-color:whitesmoke ;
    
 }
 button {
-    height: 24px;
+    height: 36px;
     cursor: pointer;
     background-color: black;
-    right: 0;
+    right: 18px;
     position: absolute;
 }

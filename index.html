@@ -6,8 +6,8 @@
     <title>
         CCEP Project System Demo
     </title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/w3/pjs.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -15,68 +15,75 @@
 </head>
 <body>
     <!--Navbar-->
-    <div class="navbar w3-mobile w3-large w3-margin-bottom w3-top">
+    <div class="navbar w3-xlarge w3-top">
         <div class="w3-bar w3-black">
             <div class="w3-bar-item w3-left">
-                CCEP Project System
+                CCEP
             </div>
             <div class="w3-right">
-                <a href="#" class="w3-bar-item w3-button">TBA</a>
-                <a href="index.html" class="w3-bar-item w3-button">Project System</a>
-                <a href="#" class="w3-bar-item w3-button">TBA</a>
-                <a href="#" class="w3-bar-item w3-button">TBA</a>
+                <a href="#" class="w3-bar-item w3-button  w3-hide-small">TBA</a>
+                <a href="index.html" class="w3-bar-item w3-button  w3-hide-small">Project System</a>
+                <a href="#" class="w3-bar-item w3-button  w3-hide-small">TBA</a>
+                <a href="#" class="w3-bar-item w3-button  w3-hide-small">TBA</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-center w3-mobile w3-hide-large w3-hide-medium"
+                    onclick="expand()">&#9776;</a>
+            </div>
+
+            <div id="menu" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button w3-center">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button w3-center">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button w3-center">Link 3</a>
             </div>
         </div>
     </div>
-    <br><br>
     <!--iframe modal-->
+    <br><br>
     <div id="md" class="w3-modal w3-mobile">
-        <div class="modal w3-mobile w3-modal-content w3-display-middle w3-margin-top">
+        <div class="modal w3-mobile w3-modal-content w3-display-middle w3-margin-top w3-margin-bottom">
             <span onclick="document.getElementById('md').style.display='none'"
                 class="w3-black w3-button w3-small w3-round w3-display-bottomright w3-mobile">Close</span>
-            <iframe id="mdc" class="modal w3-mobile" src="html/project/project1.html"> 
-                </iframe>
-                
+            <iframe id="mdc" class="modal w3-mobile" src="html/project/project1.html">
+            </iframe>
+    
         </div>
     </div>
+    
     <!--Logo or something-->
-    <div class="logo w3-container w3-xxlarge w3-center w3-margin-bottom w3-mobile">
-        Project System
-    </div>
-    <!--sorting-->
-    <div class="sorting w3-row w3-border-bottom w3-border-black w3-margin-bottom">
-        <div class="w3-container w3-mobile">
-            <div class="search-bar w3-right">
-                <input id="search" type="text" placeholder="Search..">
-                <button id="search-bt" type="submit">
-                    <i class="material-icons" style="font-size:24px ;text-align: center ;color:white">search</i>
-                </button>
-            </div>
+    <div class="logo w3-border-bottom w3-border-black">
+        <div class="w3-xxxlarge w3-center w3-light-gray w3-mobile">
+            Project System
         </div>
     </div>
-    <div class="sorting w3-row w3-mobile">
-        <div class="year-sort w3-half w3-container">
+
+    <!--sorting-->
+    <div class="sorting w3-row w3-mobile w3-padding-top-24">
+        <div class="year-sort w3-half w3-container w3-mobile">
             <div class="selectors">
                 <span class="yslt w3-hover-text-blue" info="all">
-                    ALL
+                    ALL /
                 </span>
-                /
                 <span class="yslt w3-hover-text-blue" info="113">
-                    113
+                    113 /
                 </span>
-                /
-                <span class="yslt w3-hover-text-blue" info="112">
+                <span class="yslt w3-hover-text-blue " info="112">
                     112
                 </span>
             </div>
         </div>
+        <div class="w3-container w3-rest w3-mobile">
+            <div class="search-bar w3-right">
+                <input id="search" type="text" placeholder="Search..">
+                <button id="search-bt" type="submit">
+                    <i class="material-icons" style="font-size:36px ;text-align: center ;color:white">search</i>
+                </button>
+            </div>
+        </div>
     </div>
     <!--Contanier-->
-    <div class="pj" >
-        <div class="w3-row w3-center w3-padding-16">
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info = "A B 112 Title" src="html/project/project1.html">
+    <div class="pj w3-container w3-padding-32" >
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info = "A B 112 Title" src="html/project/project1.html">
                 <div class="pj_card w3-card-4 w3-mobile">
-                    <div class="w3-container w3-black w3-large">
+                    <div class="w3-container w3-black">
                         <div class="pj-title">
                             Title
                         </div>
@@ -84,7 +91,7 @@
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags : 
                         <span class="tag w3-text-blue" info="A">
                             A
@@ -96,17 +103,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B C 112 Title" src="html/project/project1.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B C 112 Title" src="html/project/project1.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="C">
                             C
@@ -118,17 +125,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="A C 113 title" src="html/project/project1.html">
-                <div class="pj_card w3-card-4 w3-mobile" style="height: 200px;">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="A C 113 title" src="html/project/project1.html">
+                <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
-                    <div class="abstract" style="height: 150px;">
+                    <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="A">
                             A
@@ -140,10 +147,10 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="A 112 title" src="html/project/project2.html">
-                <div class="w3-card-4">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="A 112 title" src="html/project/project2.html">
+                <div class="pj_card w3-card-4">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
@@ -151,7 +158,7 @@
                         dfasdfas fsafasfas fsafasf fsafas fsafas fsafas fsafasf fsafas fsfas fsafas fsf fsafa fsfasa sf fsfsaf fsafs fsaf fs
                         fsaf fasf fasf fasfa fsafa fasf fsaf fasfa fsaf fasf fsafa fsaf fasf fasf dddd ddd ggg fff ggggg df fsa sfa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="A">
                             A
@@ -159,17 +166,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="C 113 title" src="html/project/project1.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="C 113 title" src="html/project/project1.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="C">
                             C
@@ -177,17 +184,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract" >
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="B">
                             B
@@ -195,17 +202,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B 112 title" src="html/project/project1.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B 112 title" src="html/project/project1.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="B">
                             B
@@ -213,17 +220,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="B">
                             B
@@ -231,17 +238,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="B">
                             B
@@ -249,17 +256,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pj_unit w3-quarter w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
+            <div class="pj_unit w3-quarter w3-mobile w3-container w3-padding-16" info="B 112 title" src="html/project/default.html">
                 <div class="pj_card w3-card-4 w3-mobile">
                     <div class="w3-container w3-black">
-                        <div class="pj-title w3-large">
+                        <div class="pj-title">
                             Title
                         </div>
                     </div>
                     <div class="abstract">
                         hello fas fsa
                     </div>
-                    <div class="w3-container w3-border-top w3-border-blue ">
+                    <div class="tags w3-container w3-border-top w3-border-dark-gray ">
                         tags :
                         <span class="tag w3-text-blue" info="B">
                             B
@@ -267,8 +274,17 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <script src="js/w3/pjs.js"></script>
+    <script>
+        function expand() {
+            var x = document.getElementById("menu");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
 </body>
 </html>
