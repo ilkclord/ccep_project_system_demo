@@ -10,6 +10,9 @@ div[class^="abstract"] {
 .abstract:hover{
     cursor: pointer;
 }
+span[class*="tag"]:hover{
+    cursor: pointer;
+}
 .modal{
     height: 95%;
     width: 800px;

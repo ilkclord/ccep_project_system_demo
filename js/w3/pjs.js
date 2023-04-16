@@ -33,7 +33,8 @@ for (var i = 0; i < tg.length; i++) {
 }
 //Search
 function content_search() {
-    tag = $('#search').val()
+    tag = $('#search').val();
+    $('#search').val("") ;
     var l = $('.pj').find('*[class*="pj_unit"]');
     for (var i = 0; i < l.length; i++) {
         if (pre_search != tag && tag != 'all') {
