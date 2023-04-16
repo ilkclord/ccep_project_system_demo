@@ -1,0 +1,40 @@
+
+div[class^="pj_card"]{
+    height: 200px;
+}
+div[class^="abstract"] {
+    height: 150px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+.abstract:hover{
+    cursor: pointer;
+}
+.modal{
+    height: 95%;
+    width: 800px;
+}
+div[class^="pj_unit"] {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+[class*="yslt"]:hover{
+    cursor: pointer;
+}
+.search-bar{
+    background-color: aqua;
+    margin-right: 12px;
+}
+input {
+    border-color: black;
+    height: 24px;
+    background-color:whitesmoke ;
+   
+}
+button {
+    height: 24px;
+    cursor: pointer;
+    background-color: black;
+    right: 0;
+    position: absolute;
+}
