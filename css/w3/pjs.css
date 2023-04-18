@@ -55,12 +55,16 @@ span[class*="yslt"]:hover{
 span[class*="yslt"]{
     font-size: 120%;
 }
-input {
+#small-search {
     border-color: black;
     height: 36px;
     background-color:whitesmoke ;
-    width: 50%;
-   
+    width: 50%; 
+}
+#search {
+    border-color: black;
+    height: 36px;
+    background-color: whitesmoke;
 }
 #search-bt {
     height: 36px;
