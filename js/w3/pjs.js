@@ -32,9 +32,9 @@ for (var i = 0; i < tg.length; i++) {
     }
 }
 //Search
-function content_search() {
-    tag = $('#search').val();
-    $('#search').val("") ;
+function content_search(target) {
+    tag = $(target).val();
+    $(target).val("") ;
     var l = $('.pj').find('*[class*="pj_unit"]');
     for (var i = 0; i < l.length; i++) {
         if (pre_search != tag && tag != 'all') {
@@ -54,8 +54,8 @@ function content_search() {
         pre_search = tag;
 
 }
-$("#search-bt").click(content_search);
-
+$("#search-bt").click(content_search.bind(null,'#search'));
+$("#small-search-bt").click(content_search.bind(null,'#small-search'));
 //Modal
 function modal(src) {
     $("#mdc").attr('src' , src) ;
