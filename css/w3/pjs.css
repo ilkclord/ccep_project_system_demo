@@ -59,12 +59,20 @@ input {
     border-color: black;
     height: 36px;
     background-color:whitesmoke ;
+    width: 50%;
    
 }
-button {
+#search-bt {
     height: 36px;
     cursor: pointer;
     background-color: black;
     right: 18px;
     position: absolute;
+}
+#small-search-bt{
+        height: 36px;
+        cursor: pointer;
+        background-color: black;
+        right: 25%;
+        position: absolute;
 }
